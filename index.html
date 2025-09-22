@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌻 Para mi amada Salomé 🌻</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles-container"></div>
+    
+    <!-- Flores flotantes -->
+    <div class="floating-flowers" id="floating-flowers"></div>
+    
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Botón de música -->
+        <div class="surprise-container">
+            <button class="surprise-btn" id="surprise-btn">
+                <i class="fas fa-music"></i>
+                <span>🎵 Reproducir Música 🎵</span>
+                <i class="fas fa-heart"></i>
+            </button>
+            <audio id="background-music" loop>
+                <source src="tu-cancion.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <!-- Título principal -->
+        <div class="title-container">
+            <div class="title-text">🌻 Flores Amarillas Para Salomé 🌻</div>
+        </div>
+        
+        <!-- Ramo de flores y mensaje lado a lado -->
+        <section class="bouquet-message-section">
+            <div class="bouquet-message-container">
+                <!-- Ramo de flores -->
+                <div class="bouquet-side">
+                    <div class="bouquet-image-container" id="bouquet-container">
+                        <img src="bouquet.jpg" alt="Ramo de flores para Salomé" class="bouquet-image" id="bouquet-image">
+                        <div class="bouquet-overlay"></div>
+                        <div class="floating-hearts" id="floating-hearts"></div>
+                    </div>
+                    <div class="bouquet-shadow"></div>
+                </div>
+                
+                <!-- Mensaje al lado -->
+                <div class="message-side">
+                    <div class="message-card">
+                        <div class="message-header">
+                            <h2>Para mi querida Salomé</h2>
+                            <div class="heart-animation">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="message-content">
+                            <p class="message-text">
+                                Como las flores amarillas que brillan con la luz del sol, tú iluminas mi vida con tu amor, 
+                                tu sonrisa y tu bondad. Cada día a tu lado es como un jardín en primavera, lleno de color, 
+                                alegría y esperanza.
+                            </p>
+                            <p class="message-text">
+                                Que estas flores amarillas sean un recordatorio de todo lo hermoso 
+                                que representas para mí. Eres mi sol, mi primavera, mi flor más preciada.
+                            </p>
+                            <div class="message-signature">
+                                <p>Con todo mi amor,</p>
+                                <p class="signature-name">Tu Josué</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Jardín de flores -->
+        <section class="garden-section">
+            <div class="garden-container">
+                <h3 class="garden-title">Mi jardín de amor para ti</h3>
+                <div class="flowers-garden" id="flowers-garden">
+                    <!-- Las flores se generarán dinámicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
